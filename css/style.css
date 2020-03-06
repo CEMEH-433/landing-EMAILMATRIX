@@ -135,8 +135,8 @@ body {
 }
 
 .header-content, .intelligence {
-    min-height: 22em;
-    border-bottom: 1px solid #336699;
+    min-height: 287px;
+    border-bottom: 1px solid rgb( 70, 118, 169 );
 }
 .header-footer {
     grid-column: 3;
@@ -265,7 +265,7 @@ body {
 .header-flower > .flower {
     position: absolute;
     width: 390px;
-    z-index: 1;
+    z-index: -1;
     top: 0;
     right: 0;
 }
@@ -273,7 +273,82 @@ body {
 .header-flower > .flower_shadow {
     position: absolute;
     width: 315px;
-    z-index: -1;
+    z-index: -3;
     top: 0;
     right: 0;
+}
+
+.header-notepad {
+    position: relative;
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.header-notepad > .notepad, .header-notepad > .notepaper_shadow {
+    position: absolute;
+    top: 37px;
+    left: 30px;
+}
+
+.header-notepad > .notepad {
+    z-index: -5;
+    width: 229px;
+}
+
+.header-notepad > .notepaper_shadow {
+    z-index: -7;
+    width: 308px;
+}
+
+.header-notepad > .clamp_shadow {
+    position: absolute;
+    width: 48px;
+    z-index: -3;
+    top: 33px;
+    left: 84px;
+}
+
+.header-notepad > .clamp_shadow_2 {
+    position: absolute;
+    width: 48px;
+    z-index: -3;
+    top: 10px;
+    left: 128px;
+}
+
+.header-notepad > .rectangle {
+    z-index: -1;
+    position: absolute;
+    width: 40px;
+    top: 133px;
+    left: 102px;
+}
+
+.header-notepad > .postit {
+    z-index: -2;
+    position: absolute;
+    width: 104px;
+    top: 205px;
+    left: 248px;
+}
+
+.header-pen {
+    position: relative;
+    grid-column: 5;
+    grid-row: 3;
+    border-bottom: 1px solid rgb( 70, 118, 169 );
+}
+
+.header-pen > .pen {
+    position: absolute;
+    width: 139px;
+    top: 144px;
+    left: 73px;
+}
+
+.header-border-bottom {
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom: 1px solid rgb( 70, 118, 169 );
+    z-index: -9;
 }
