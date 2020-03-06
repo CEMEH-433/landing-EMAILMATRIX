@@ -34,7 +34,7 @@ body {
     justify-self: start;
 }
 
-.header-emx > div {
+.header-emx>div {
     font-family: "Open Sans Light", "Open Sans", sans-serif;
     font-size: 9px;
     letter-spacing: 3px;
@@ -136,19 +136,20 @@ body {
 
 .header-content, .intelligence {
     min-height: 287px;
-    border-bottom: 1px solid rgb( 70, 118, 169 );
+    border-bottom: 1px solid rgb( 70, 118, 169);
 }
+
 .header-footer {
     grid-column: 3;
     grid-row: 4;
-    color: rgb( 42, 42, 42 );
+    color: rgb( 42, 42, 42);
     justify-self: start;
 }
 
 .header-media {
     grid-column: 4;
     grid-row: 4;
-    color: rgb( 137, 137, 137 );
+    color: rgb( 137, 137, 137);
     justify-self: end;
     text-align: end;
 }
@@ -159,7 +160,7 @@ body {
     padding-top: 2em;
 }
 
-.header-media > .share {
+.header-media>.share {
     margin-bottom: 10px;
 }
 
@@ -175,12 +176,12 @@ body {
     font-size: 14px;
 }
 
-.header-footer-adres > a, .header-footer-phone > a {
+.header-footer-adres>a, .header-footer-phone>a {
     text-decoration: none;
-    color: rgb( 42, 42, 42 );
+    color: rgb( 42, 42, 42);
 }
 
-.location > img, .phone > img {
+.location>img, .phone>img {
     height: 20px;
     position: absolute;
 }
@@ -200,44 +201,44 @@ body {
     text-align: center;
 }
 
-.social > img {
+.social>img {
     width: 20px;
     height: 20px;
     border-radius: 2px;
     border-style: solid;
 }
 
-.social-fb > img {
-    border-color: rgb( 74, 110, 169 );
+.social-fb>img {
+    border-color: rgb( 74, 110, 169);
 }
 
-.social-tw > img {
-    border-color: rgb( 94, 169, 221 );
+.social-tw>img {
+    border-color: rgb( 94, 169, 221);
 }
 
-.social-pt > img {
-    border-color: rgb( 203, 32, 40 );
+.social-pt>img {
+    border-color: rgb( 203, 32, 40);
 }
 
-.social-ml > img {
-    border-color: rgb( 0, 168, 170 );
-}
- 
-.social-you > img {
-    border-color: rgb( 207, 52, 39 );
+.social-ml>img {
+    border-color: rgb( 0, 168, 170);
 }
 
-.social-in > img {
-    border-color: rgb( 0, 123, 182 );
+.social-you>img {
+    border-color: rgb( 207, 52, 39);
 }
-  
+
+.social-in>img {
+    border-color: rgb( 0, 123, 182);
+}
+
 .header-cubes {
     position: relative;
     grid-column: 2;
     grid-row: 1;
 }
 
-.header-cubes > .cubes {
+.header-cubes>.cubes {
     position: absolute;
     top: 20px;
     left: -37px;
@@ -246,7 +247,7 @@ body {
     opacity: .7;
 }
 
-.header-cubes > .cubes_shadow {
+.header-cubes>.cubes_shadow {
     position: absolute;
     top: 16px;
     left: -40px;
@@ -262,7 +263,7 @@ body {
     align-items: start;
 }
 
-.header-flower > .flower {
+.header-flower>.flower {
     position: absolute;
     width: 390px;
     z-index: -1;
@@ -270,7 +271,7 @@ body {
     right: 0;
 }
 
-.header-flower > .flower_shadow {
+.header-flower>.flower_shadow {
     position: absolute;
     width: 315px;
     z-index: -3;
@@ -284,23 +285,23 @@ body {
     grid-row: 3/5;
 }
 
-.header-notepad > .notepad, .header-notepad > .notepaper_shadow {
+.header-notepad>.notepad, .header-notepad>.notepaper_shadow {
     position: absolute;
     top: 37px;
     left: 30px;
 }
 
-.header-notepad > .notepad {
+.header-notepad>.notepad {
     z-index: -5;
     width: 229px;
 }
 
-.header-notepad > .notepaper_shadow {
+.header-notepad>.notepaper_shadow {
     z-index: -7;
     width: 308px;
 }
 
-.header-notepad > .clamp_shadow {
+.header-notepad>.clamp_shadow {
     position: absolute;
     width: 48px;
     z-index: -3;
@@ -308,7 +309,7 @@ body {
     left: 84px;
 }
 
-.header-notepad > .clamp_shadow_2 {
+.header-notepad>.clamp_shadow_2 {
     position: absolute;
     width: 48px;
     z-index: -3;
@@ -316,7 +317,7 @@ body {
     left: 128px;
 }
 
-.header-notepad > .rectangle {
+.header-notepad>.rectangle {
     z-index: -1;
     position: absolute;
     width: 40px;
@@ -324,8 +325,7 @@ body {
     left: 102px;
 }
 
-.header-notepad > .postit {
-    z-index: -2;
+.header-notepad>.postit {
     position: absolute;
     width: 104px;
     top: 205px;
@@ -336,10 +336,10 @@ body {
     position: relative;
     grid-column: 5;
     grid-row: 3;
-    border-bottom: 1px solid rgb( 70, 118, 169 );
+    border-bottom: 1px solid rgb( 70, 118, 169);
 }
 
-.header-pen > .pen {
+.header-pen>.pen {
     position: absolute;
     width: 139px;
     top: 144px;
@@ -349,6 +349,104 @@ body {
 .header-border-bottom {
     grid-column: 2;
     grid-row: 3;
-    border-bottom: 1px solid rgb( 70, 118, 169 );
+    border-bottom: 1px solid rgb( 70, 118, 169);
     z-index: -9;
+}
+
+@media (max-width: 1185px) {
+    .header {
+        grid-template-columns: 2fr 1fr 3fr 3fr 1fr 2fr;
+    }
+    .header-header {
+        font-size: 27px;
+    }
+    .header-flower>.flower {
+        width: 300px;
+    }    
+    .header-flower>.flower_shadow {
+        width: 241px;
+    }
+        .header-notepad>.notepad, .header-notepad>.notepaper_shadow {
+        top: 39px;
+    }
+    .header-notepad>.clamp_shadow {
+        top: 35px;
+    }
+    .header-notepad>.clamp_shadow_2 {
+        top: 12px;
+    }
+    .header-notepad>.rectangle {
+        top: 135px;
+    }
+    .header-notepad>.postit {
+        top: 207px;
+    }
+    .header-pen>.pen {
+        top: 145px;
+    }
+}
+
+@media (max-width: 1092px) {
+    .header {
+        grid-template-rows: 1fr 1fr 1fr 2fr 0.4fr 0.4fr;
+        max-width: 1092px;
+    }
+    .header-content {
+        min-height: 100px;
+        grid-column: 3/5;
+        grid-row: 3;
+        border-bottom: 0px;
+    }
+    .intelligence {
+        min-height: 100px;
+        grid-column: 3/5;
+        grid-row: 4;
+    }
+    .header-media {
+        grid-column: 3/5;
+        grid-row: 6;
+        align-self: start;
+    }
+    .header-footer {
+        grid-column: 3/5;
+        grid-row: 5;
+        padding-left: 120px;
+    }
+    .header-footer, .header-media {
+        font-size: 10px;
+        min-height: 1em;
+    }
+    .header-notepad {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: center;
+    }    
+    .header-pen {
+        grid-column: 5;
+        grid-row: 4;
+        align-self: center;
+        border-bottom: 0;
+    }
+    .header-border-bottom {
+        border-bottom: 0;
+    }
+    .header-notepad>.notepad, .header-notepad>.notepaper_shadow {
+        top: -62px;
+    }
+    .header-notepad>.clamp_shadow {
+        top: -66px;
+    }
+    .header-notepad>.clamp_shadow_2 {
+        top: -89px;
+    }
+    .header-notepad>.rectangle {
+        top: 134px;
+    }
+    .header-notepad>.postit {
+        top: 106px;
+    }
+    .header-pen>.pen {
+        top: 45px;
+        left: 0;
+    }
 }
