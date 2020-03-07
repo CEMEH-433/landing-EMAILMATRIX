@@ -184,6 +184,7 @@ body {
 .location>img, .phone>img {
     height: 20px;
     position: absolute;
+    z-index: 3;
 }
 
 .location img {

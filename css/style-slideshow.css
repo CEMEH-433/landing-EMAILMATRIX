@@ -1,0 +1,139 @@
+.slideshow {
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-rows: 2fr 9fr 1fr;
+    grid-row-gap: 40px;
+}
+
+.slideshow .slideshow-content {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 16px;
+    color: rgb( 71, 71, 71);
+    padding: 0 20px;
+    font-family: "Open Sans Extrabold", "Open Sans", sans-serif;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.pic-ctn {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+    width: 700px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: display 25s infinite;
+    width: 700px;
+}
+
+img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.slideshow .flower-2 {
+    grid-column: 3;
+    position: relative;
+    justify-self: end;
+    align-self: center;
+}
+
+.slideshow .flower-2>img {
+    position: absolute;
+    width: 250px;
+    top: 30px;
+    right: 0;
+    z-index: -1;
+}
+
+.slideshow .phone {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+}
+
+.slideshow .phone>img {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1280px) {
+    .slideshow {
+        grid-template-rows: 2fr 8fr 1fr;
+    }
+    .slideshow .phone, .slideshow .flower-2 {
+        grid-row: 3;
+    }
+    .slideshow .phone {
+        justify-self: center;
+    }
+    .slideshow .flower-2 {
+        align-self: start;
+    }
+}
+
+@media (max-width: 1185px) {
+    .slideshow {
+        grid-template-rows: 2fr 6fr 1fr;
+    }
+    .pic-ctn, .pic-ctn>img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1092px) {
+    .slideshow{
+        grid-template-rows: 2fr 4fr 2fr;
+    }
+    .pic-ctn, .pic-ctn>img {
+        width: 500px;
+    }
+}
