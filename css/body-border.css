@@ -1,0 +1,10 @@
+.body-border {
+    display: grid;
+    grid-template-columns: 3fr 14fr 3fr;
+}
+
+.border-border {
+    grid-column: 2;
+    border-top: 1px solid rgb( 70, 118, 169);
+    height: 4em;
+}
