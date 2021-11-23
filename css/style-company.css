@@ -1,0 +1,193 @@
+.company {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr 10fr 2fr 3fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 80px;
+    color: rgb( 71, 71, 71);
+}
+
+.company-company {
+    font-family: "Open Sans Extrabold", "Open Sans", sans-serif;
+	font-size: 29px;
+	text-transform: uppercase;
+    grid-column: 3;
+    grid-row: 1;
+    height: 80px;
+}
+
+.company-content {
+    grid-column: 3;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    grid-auto-rows: minmax(12em, auto);
+}
+
+.comp {
+    position: relative;
+    font-family: "Open Sans Extrabold", "Open Sans", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    min-width: 17em;
+}
+
+.comp-circle {
+    position: absolute;
+    width: 12em;
+    height: 12em;
+    border: 10px solid #336699;
+    border-radius: 10em;
+    text-align: center;
+}
+.comp-name {
+    padding: 0 60px;
+    text-align: center;
+}
+
+.company-text {
+    display: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    text-align: left;
+    text-transform: none;
+}
+
+.company-text ul {
+    padding-left: 20px;
+}
+
+.comp:hover {
+    background-color: #336699;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 0;
+    align-self: stretch;
+}
+
+.comp:hover .comp-name {
+    padding: 0;
+}
+
+.comp:hover .company-text {
+    display: grid;
+}
+
+.comp:hover .comp-circle {
+    display: none;
+}
+
+.comp-coffe {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.comp-coffe>.coffe {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 500px;
+    z-index: -1;
+}
+
+.comp-clock {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.comp-clock>img {
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    height: 500px;
+    z-index: -1;
+}
+
+.comp-keyboard {
+    grid-column: 4;
+    grid-row: 2/4;
+}
+
+.comp-keyboard>.keyboard-1, .comp-keyboard>.keyboard-2, .comp-keyboard>.keyboard-3 {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    width: 400px;
+    z-index: -1;
+}
+
+.comp-keyboard>.keyboard-2, .comp-keyboard>.keyboard-3 {
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .comp-keyboard>.keyboard-1 {
+        display: none;
+    }
+    .comp-keyboard>.keyboard-2 {
+        display: inline-block;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1185px) {
+    .comp-clock>img {
+        left: 70px;
+    }
+    .comp-coffe>.coffe {
+        left: -60px;
+    }
+}
+
+@media (max-width: 1092px) {
+    .comp {
+        min-width: 16em;
+        font-size: 17px;
+    }
+    .comp:hover {
+        font-size: 13px;
+    }
+    .comp:hover .company-text {
+        font-size: 11px;
+    }
+    .comp-circle {
+        width: 11em;
+        height: 11em;
+    }
+    .company-crm>.comp-name {
+        margin-left: -15px;
+    }
+    .comp:hover .comp-name {
+        margin-left: 0;
+    }
+    .comp-clock>img {
+        left: 40px;
+    }
+    .comp-keyboard>.keyboard-2 {
+        display: none;
+    }   
+    .comp-keyboard>.keyboard-3 {
+        display: inline-block;
+        width: 250px;
+    }
+    .comp-coffe>.coffe {
+        left: -100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .comp-coffe>.coffe {
+        left: -140px;
+    }
+    .comp-clock>img {
+        left: 0;
+    }
+}
